@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Components and Layout Patterns</title>
+    <style>
+      /*
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+      */
+      /* 
+      MAIN COLOR: #087f5b
+      GRAY COLOR: #343a40
+      */
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        color: #343a40;
+        line-height: 1;
+      }
+
+      h1 {
+        text-align: center;
+        margin-top: 32px;
+        color: #087f5b;
+      }
+
+      nav {
+        padding-top: 64px;
+        width: 1200px;
+        margin: 0 auto;
+        font-size: 20px;
+        font-weight: 500;
+      }
+
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        list-style: none;
+      }
+
+      a:link,
+      a:visited {
+        text-decoration: none;
+        background-color: #087f5b;
+        color: #fff;
+        padding: 12px 24px;
+        cursor: pointer;
+        border-radius: 24px;
+      }
+
+      a:hover,
+      a:active {
+        border: 2px solid #087f5b;
+        background-color: #fff;
+        color: #087f5b;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Components and Layout Patterns</h1>
+    <nav>
+      <ul>
+        <li><a href="01-accordion.html">01-accordion</a></li>
+        <li><a href="02-carousel.html">02-carousel</a></li>
+        <li><a href="03-table.html">03-table</a></li>
+        <li><a href="04-pagination.html">04-pagination</a></li>
+        <li><a href="05-hero.html">05-hero</a></li>
+        <li><a href="06-app-layout.html">06-app-layout</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
